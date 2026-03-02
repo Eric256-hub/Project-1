@@ -4,31 +4,58 @@
 <meta charset="UTF-8">
 <title>Erickson Kasaga - IT & Excel Portfolio</title>
 <style>
-    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#eef2f3; color:#333; }
-    header { background:#1e90ff; color:white; padding:30px 20px; text-align:center; }
-    header h1 { margin:0; font-size:2.2em; }
-    header p { margin:5px 0 15px; font-size:1.1em; }
-    nav a { color:white; text-decoration:none; margin:0 15px; font-weight:bold; }
-    nav a:hover { text-decoration:underline; }
+/* --- Global Styles --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:0; padding:0; background:#f0f2f5; color:#333;
+}
+a { text-decoration:none; color:#1e90ff; }
+a:hover { text-decoration:underline; }
 
-    main { max-width:900px; margin:20px auto; padding:10px; }
+/* --- Header --- */
+header {
+    background:#1e90ff; color:white; padding:40px 20px; text-align:center;
+}
+header h1 { margin:10px 0; font-size:2.5em; }
+header p { margin:5px 0; font-size:1.2em; }
 
-    section { background:white; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 3px 6px rgba(0,0,0,0.1); }
+/* --- Navigation --- */
+nav { margin-top:15px; }
+nav a { margin:0 15px; font-weight:bold; font-size:1em; color:white; }
+nav a:hover { color:#ffdd57; }
 
-    section h2 { color:#1e90ff; margin-top:0; }
-    ul { padding-left:20px; }
-    
-    .project-card { display:flex; flex-direction:column; background:#f9f9f9; padding:15px; margin:10px 0; border-radius:6px; border:1px solid #ddd; }
-    .project-card div { height:200px; background:#ddd; display:flex; align-items:center; justify-content:center; border-radius:4px; font-weight:bold; color:#555; }
-    
-    footer { text-align:center; padding:15px 0; background:#333; color:white; font-size:0.9em; }
-    footer a { color:#1e90ff; text-decoration:none; }
-    footer a:hover { text-decoration:underline; }
+/* --- Main --- */
+main { max-width:1000px; margin:30px auto; padding:0 20px; }
 
-    @media screen and (max-width:600px) {
-        nav { display:block; }
-        nav a { display:inline-block; margin:5px 0; }
-    }
+/* --- About Section --- */
+#about { display:flex; align-items:center; background:white; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin-bottom:25px; }
+#about img { border-radius:50%; width:150px; height:150px; object-fit:cover; margin-right:20px; border:3px solid #1e90ff; }
+#about div { flex:1; }
+
+/* --- Sections --- */
+section { background:white; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.05); margin-bottom:25px; }
+section h2 { color:#1e90ff; margin-top:0; }
+
+/* --- Skills --- */
+#skills ul { list-style:none; padding:0; display:flex; flex-wrap:wrap; }
+#skills li { background:#e0f0ff; margin:5px; padding:10px 15px; border-radius:5px; font-weight:bold; }
+
+/* --- Projects --- */
+.project-card { background:#f9f9f9; padding:15px; margin:10px 0; border-radius:8px; border-left:5px solid #1e90ff; }
+.project-card div { height:150px; background:#ddd; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#555; border-radius:5px; margin-bottom:10px; }
+
+/* --- Footer --- */
+footer { text-align:center; padding:15px 0; background:#333; color:white; font-size:0.9em; }
+footer a { color:#1e90ff; }
+footer a:hover { text-decoration:underline; }
+
+/* --- Responsive --- */
+@media screen and (max-width:768px){
+    #about { flex-direction:column; text-align:center; }
+    #about img { margin:0 0 15px 0; }
+    nav { display:block; }
+    nav a { display:inline-block; margin:10px 0; }
+}
 </style>
 </head>
 <body>
@@ -44,11 +71,16 @@
 </header>
 
 <main>
+<!-- About Me with Photo -->
 <section id="about">
-    <h2>About Me</h2>
-    <p>I am a 2nd-year Bachelor of Science in IT student at Uganda Christian University with practical experience in Excel dashboards, data analysis, IT troubleshooting, and basic programming. I specialize in creating professional solutions that help clients save time and make better decisions.</p>
+    <img src="assets/rock.png" alt="Erickson Kasaga Photo">
+    <div>
+        <h2>About Me</h2>
+        <p>I am a 2nd-year Bachelor of Science in IT student at Uganda Christian University with practical experience in Excel dashboards, data analysis, IT troubleshooting, and basic programming. I create professional IT solutions that help clients save time and make better decisions.</p>
+    </div>
 </section>
 
+<!-- Skills -->
 <section id="skills">
     <h2>Skills</h2>
     <ul>
@@ -60,27 +92,30 @@
     </ul>
 </section>
 
+<!-- Education -->
 <section id="education">
     <h2>Education</h2>
     <p>BSc in Information Technology (BSIT), Uganda Christian University – 2nd Year</p>
 </section>
 
+<!-- Projects -->
 <section id="projects">
     <h2>Projects Preview</h2>
     <div class="project-card">
         <div>Excel Dashboard Project</div>
-        <p>Built a SACCO financial model to compute PV, FV, NPV, and IRR. Automated calculations and dynamic dashboard analysis.</p>
+        <p>SACCO financial model: PV, FV, NPV, IRR calculations with dynamic dashboard for analysis.</p>
     </div>
     <div class="project-card">
         <div>Personal Excel Dashboard</div>
-        <p>Created a personal finance dashboard with charts and automated formulas for easy visualization.</p>
+        <p>Dynamic personal finance dashboard with charts and automated formulas for easy visualization.</p>
     </div>
     <div class="project-card">
         <div>Python Mini Project</div>
-        <p>Automated basic data calculations and reporting using Python programming for academic exercises.</p>
+        <p>Automated basic data calculations and reporting for academic exercises using Python.</p>
     </div>
 </section>
 
+<!-- Contact -->
 <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:kasagaerickson65@gmail.com">kasagaerickson65@gmail.com</a></p>
