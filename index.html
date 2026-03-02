@@ -3,24 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <title>Erickson Kasaga - IT & Excel Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* --- Self-contained CSS --- */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        main h2 {
+            color: #1e90ff;
+            margin-top: 20px;
+        }
+
+        main ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+
+        main img {
+            display: block;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #1e90ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
     <header>
         <h1>Erickson Kasaga</h1>
         <p>Excel Dashboards & IT Solutions | 2nd-year BSIT Student</p>
         <nav>
-            <a href="index.html">Home</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="contact.html">Contact</a>
+            <a href="#about">Home</a> |
+            <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
         <!-- About Me -->
-        <section>
+        <section id="about">
             <h2>About Me</h2>
             <p>
                 I am a 2nd-year Bachelor of Science in IT student at Uganda Christian University with practical experience in Excel dashboards, data analysis, IT troubleshooting, and basic programming. I specialize in creating professional solutions that help clients save time and make better decisions.
@@ -28,7 +109,7 @@
         </section>
 
         <!-- Skills -->
-        <section>
+        <section id="skills">
             <h2>Skills</h2>
             <ul>
                 <li>Excel Dashboard (Pro)</li>
@@ -40,25 +121,33 @@
         </section>
 
         <!-- Education -->
-        <section>
+        <section id="education">
             <h2>Education</h2>
             <p>BSc in Information Technology (BSIT), Uganda Christian University – 2nd Year</p>
         </section>
 
         <!-- Projects Preview -->
-        <section>
+        <section id="projects">
             <h2>Projects Preview</h2>
             <ul>
-                <li><a href="projects.html">Excel Dashboard Project</a></li>
-                <li><a href="projects.html">Personal Excel Dashboard</a></li>
-                <li><a href="projects.html">Python Mini Project</a></li>
+                <li>Excel Dashboard Project – SACCO TVM Model</li>
+                <li>Personal Excel Dashboard</li>
+                <li>Python Mini Project – Data Automation</li>
             </ul>
+            <p>(Screenshots can be added later as images inside this section.)</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kasagaerickson65@gmail.com">kasagaerickson65@gmail.com</a></p>
+            <p>Phone: 0747752175</p>
+            <p>Fiverr Profile: <a href="https://www.fiverr.com/yourprofile" target="_blank">Click Here</a></p>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>© 2026 Erickson Kasaga | Email: <a href="mailto:kasagaerickson65@gmail.com">kasagaerickson65@gmail.com</a></p>
+        <p>© 2026 Erickson Kasaga</p>
     </footer>
 </body>
 </html>
