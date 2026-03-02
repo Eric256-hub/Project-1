@@ -1,0 +1,78 @@
+/* style.css - Professional IT/Excel Portfolio */
+
+/* General Setup */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1e90ff; /* Blue Header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 20px auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+main h2 {
+    color: #1e90ff;
+    margin-top: 20px;
+}
+
+main ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+main img {
+    display: block;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
