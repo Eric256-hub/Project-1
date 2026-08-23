@@ -1,132 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Erickson Kasaga - IT & Excel Portfolio</title>
-<style>
-/* --- Global Styles --- */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin:0; padding:0; background:#f0f2f5; color:#333;
-}
-a { text-decoration:none; color:#1e90ff; }
-a:hover { text-decoration:underline; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasaga Erickson | IT Student Portfolio</title>
 
-/* --- Header --- */
-header {
-    background:#1e90ff; color:white; padding:40px 20px; text-align:center;
-}
-header h1 { margin:10px 0; font-size:2.5em; }
-header p { margin:5px 0; font-size:1.2em; }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-/* --- Navigation --- */
-nav { margin-top:15px; }
-nav a { margin:0 15px; font-weight:bold; font-size:1em; color:white; }
-nav a:hover { color:#ffdd57; }
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-/* --- Main --- */
-main { max-width:1000px; margin:30px auto; padding:0 20px; }
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-/* --- About Section --- */
-#about { display:flex; align-items:center; background:white; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); margin-bottom:25px; }
-#about img { border-radius:50%; width:150px; height:150px; object-fit:cover; margin-right:20px; border:3px solid #1e90ff; }
-#about div { flex:1; }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-/* --- Sections --- */
-section { background:white; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.05); margin-bottom:25px; }
-section h2 { color:#1e90ff; margin-top:0; }
-
-/* --- Skills --- */
-#skills ul { list-style:none; padding:0; display:flex; flex-wrap:wrap; }
-#skills li { background:#e0f0ff; margin:5px; padding:10px 15px; border-radius:5px; font-weight:bold; }
-
-/* --- Projects --- */
-.project-card { background:#f9f9f9; padding:15px; margin:10px 0; border-radius:8px; border-left:5px solid #1e90ff; }
-.project-card div { height:150px; background:#ddd; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#555; border-radius:5px; margin-bottom:10px; }
-
-/* --- Footer --- */
-footer { text-align:center; padding:15px 0; background:#333; color:white; font-size:0.9em; }
-footer a { color:#1e90ff; }
-footer a:hover { text-decoration:underline; }
-
-/* --- Responsive --- */
-@media screen and (max-width:768px){
-    #about { flex-direction:column; text-align:center; }
-    #about img { margin:0 0 15px 0; }
-    nav { display:block; }
-    nav a { display:inline-block; margin:10px 0; }
-}
-</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Erickson Kasaga</h1>
-    <p>Excel Dashboards & IT Solutions | 2nd-year BSIT Student</p>
-    <nav>
-        <a href="#about">Home</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- ================= NAVBAR ================= -->
 
-<main>
-<!-- About Me with Photo -->
-<section id="about">
-    <img src="assets/rock.png" alt="Erickson Kasaga Photo">
-    <div>
-        <h2>About Me</h2>
-        <p>I am a 2nd-year Bachelor of Science in IT student at Uganda Christian University with practical experience in Excel dashboards, data analysis, IT troubleshooting, and basic programming. I create professional IT solutions that help clients save time and make better decisions.</p>
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Erickson<span>.</span>
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <a href="contact.html" class="btn-nav">
+                Hire Me
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+    <div class="hero-text">
+
+        <p class="hello">👋 Hello, I'm</p>
+
+        <h1>Kasaga Erickson</h1>
+
+        <h2>
+            Information Technology Student
+        </h2>
+
+        <p class="description">
+            I design and build modern digital solutions in software development,
+            networking, and cybersecurity. I focus on creating practical systems
+            that solve real-world problems and deliver value.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="projects.html" class="btn-primary">View Projects</a>
+
+            <a href="files/Kasaga_Erickson_CV.pdf" class="btn-secondary">Download CV</a>
+
+        </div>
+
+        <div class="social-icons">
+
+            <a href="https://github.com/Eric256-hub/Project-1" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/256747752175" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:kasagaerickson65@gmail.com" class="contact-links">
+                        <i class="fa-solid fa-envelope"></i></a>
+
+        </div>
+
     </div>
-</section>
 
-<!-- Skills -->
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>Excel Dashboard (Pro)</li>
-        <li>Data Analysis (Intermediate)</li>
-        <li>IT Troubleshooting (Beginner/Intermediate)</li>
-        <li>Programming: Python, Java, C++ (Beginner)</li>
-        <li>Dashboard Design & Automation</li>
-    </ul>
-</section>
+    <div class="hero-image">
 
-<!-- Education -->
-<section id="education">
-    <h2>Education</h2>
-    <p>BSc in Information Technology (BSIT), Uganda Christian University – 2nd Year</p>
-</section>
+        <div class="image-wrapper">
+            <img src="images/profile.jpg" alt="Kasaga Erickson">
+        </div>
 
-<!-- Projects -->
-<section id="projects">
-    <h2>Projects Preview</h2>
-    <div class="project-card">
-        <div>Excel Dashboard Project</div>
-        <p>SACCO financial model: PV, FV, NPV, IRR calculations with dynamic dashboard for analysis.</p>
     </div>
-    <div class="project-card">
-        <div>Personal Excel Dashboard</div>
-        <p>Dynamic personal finance dashboard with charts and automated formulas for easy visualization.</p>
-    </div>
-    <div class="project-card">
-        <div>Python Mini Project</div>
-        <p>Automated basic data calculations and reporting for academic exercises using Python.</p>
-    </div>
+
 </section>
+    <!-- ================= STATS ================= -->
 
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:kasagaerickson65@gmail.com">kasagaerickson65@gmail.com</a></p>
-    <p>Phone: 0747752175</p>
-    <p>Fiverr Profile: <a href="https://www.fiverr.com/yourprofile" target="_blank">Click Here</a></p>
-</section>
-</main>
+    <section class="stats">
 
-<footer>
-    <p>© 2026 Erickson Kasaga</p>
-</footer>
+        <div class="card">
 
+            <h2>10+</h2>
+
+            <p>Projects</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>15+</h2>
+
+            <p>Technologies</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>5+</h2>
+
+            <p>Certifications</p>
+
+        </div>
+
+        <div class="card">
+
+            <h2>100%</h2>
+
+            <p>Dedication</p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED SKILLS ================= -->
+
+    <section class="skills-preview">
+
+        <h2>Technical Skills</h2>
+
+        <div class="skill-box">
+
+            <div><i class="fab fa-python"></i><span>Python</span></div>
+
+            <div><i class="fab fa-html5"></i><span>HTML5</span></div>
+
+            <div><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
+
+            <div><i class="fab fa-js"></i><span>JavaScript</span></div>
+
+            <div><i class="fas fa-network-wired"></i><span>Networking</span></div>
+
+            <div><i class="fab fa-linux"></i><span>Linux</span></div>
+
+            <div><i class="fas fa-database"></i><span>MySQL</span></div>
+
+            <div><i class="fas fa-shield-alt"></i><span>Cybersecurity</span></div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FEATURED PROJECT ================= -->
+
+    <section class="featured-project">
+
+        <h2>Featured Project</h2>
+
+        <div class="project-card">
+
+            <img src="images/project1.jpg" alt="ISP Billing">
+
+            <div class="project-content">
+
+                <h3>
+                    ISP Billing Management System
+                </h3>
+
+                <p>
+
+                    A complete Wi-Fi customer management
+                    and billing platform built using
+                    Python, HTML, CSS and MySQL.
+
+                </p>
+
+                <a href="projects.html" class="btn-primary">
+
+                    Learn More
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-banner">
+
+        <h2>
+
+            Let's Build Something Amazing Together
+
+        </h2>
+
+        <p>
+
+            Available for internships, freelance work,
+            networking projects and software development.
+
+        </p>
+
+        <a href="contact.html" class="btn-primary">
+
+            Contact Me
+
+        </a>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <h3>
+
+            Kasaga Erickson
+
+        </h3>
+
+        <p>
+
+            Information Technology Student |
+            Python Developer |
+            Network Engineer |
+            Web Developer
+
+        </p>
+
+        <p>
+
+            © 2026 All Rights Reserved.
+
+        </p>
+
+    </footer>
+<script src="js/index.js"></script>
 </body>
+
 </html>
