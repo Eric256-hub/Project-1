@@ -1,0 +1,34 @@
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/</loc>
+    </url>
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/skills.html</loc>
+    </url>
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/projects.html</loc>
+    </url>
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/services.html</loc>
+    </url>
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/resume.html</loc>
+    </url>
+
+    <url>
+        <loc>https://eric256-hub.github.io/Project-1/contact.html</loc>
+    </url>
+
+</urlset>
+```
