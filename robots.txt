@@ -1,0 +1,6 @@
+```text
+User-agent: *
+Allow: /
+
+Sitemap: https://eric256-hub.github.io/Project-1/sitemap.xml
+```
